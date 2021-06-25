@@ -1,10 +1,14 @@
+import { HashRouter, Route } from "react-router-dom";
+import Home from "./router/Home";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <>
+      <HashRouter>
+        <Route path="/" exact={true} component={Home} />
+      </HashRouter>
+    </>
   );
 }
 

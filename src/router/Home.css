@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1120px;
+  margin: 100px auto;
+}
+.logo {
+  color: white;
+  display: flex;
+  font-size: 20px;
+}
+.logo p:last-child {
+  font-size: 8px;
+  margin: 5px;
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  width: 48px;
+  height: 24px;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+.toggle button {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+.dark {
+  color: #282828;
+}
+.darkBtn {
+  transition: transform 0.2s ease-in-out;
+  transform: translateX(24px);
+}
