@@ -6,6 +6,12 @@ function App() {
   return (
     <>
       <HashRouter>
+      <nav>
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>
+      </nav>
         <Route path="/" exact={true} component={Home} />
       </HashRouter>
     </>
