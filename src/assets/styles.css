@@ -20,26 +20,38 @@ body {
   background-color: var(--black);
   overflow: auto;
 }
+a {
+  text-decoration: none;
+}
 nav {
   position: fixed;
   display: flex;
   justify-content: center;
   width: 100%;
+  margin: 0 auto;
+  align-items: center;
   padding: 30px 10% 0;
   z-index: 99;
 }
-nav button {
-  background-color: transparent;
+nav ul {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul a li {
   color: var(--gray);
+  text-align: center;
   font-size: 14px;
+  font-weight: 300;
   margin: 0 10px;
-  border: none;
   opacity: 0.6;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
-nav button:hover,
-nav button:active {
+nav ul a li:hover,
+nav ul a li:active {
   opacity: 1;
 }
 .video {

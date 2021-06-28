@@ -9,7 +9,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.9);
-  padding: 70px 10%;
+  padding: 60px 10%;
 }
 .logo {
   color: var(--white);
@@ -21,6 +21,13 @@ header {
 .logo p:last-child {
   font-size: 8px;
   margin: 5px;
+  animation: blinker 1.5s ease infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 .toggle {
   display: flex;
@@ -102,4 +109,21 @@ header {
   font-size: 40px;
   cursor: pointer;
   padding-bottom: 20px;
+}
+@media (max-width: 950px) {
+  .home-section__info {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 560px) {
+  .home-section__info-title h1 {
+    font-size: 34px;
+  }
+  .home-section__info-title .info-sub {
+    font-size: 20px;
+  }
+  #typing {
+    width: 160px;
+  }
 }

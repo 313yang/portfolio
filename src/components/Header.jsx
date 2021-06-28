@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isDark, setDark] = useState(false);
@@ -36,10 +37,16 @@ function Header() {
         ></video>
       )}
       <header>
-        <div className="logo">
+        <Link
+          to="/"
+          className="logo"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
           <p>Y</p>
           <p>★</p>
-        </div>
+        </Link>
         {isDark ? (
           <div className="toggle" style={{ border: "1px solid #282828" }}>
             <button

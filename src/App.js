@@ -1,18 +1,16 @@
-import { HashRouter, Route } from "react-router-dom";
+import { HashRouter, Link, Route } from "react-router-dom";
 import Home from "./router/Home";
 import "./assets/styles.css";
+import About from "./router/About";
 
 function App() {
   const handleScroll = (e) => {
     const {
       target: { id },
     } = e;
-    console.log(id);
-    if (id === "home") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else if (id === "about") {
+    if (id === "about") {
       window.scrollTo({ top: 1000, behavior: "smooth" });
-    } else if (id === "project") {
+    } else if (id === "works") {
       window.scrollTo({ top: 2000, behavior: "smooth" });
     } else if (id === "contact") {
       window.scrollTo({ top: 3000, behavior: "smooth" });
@@ -22,20 +20,26 @@ function App() {
     <>
       <HashRouter>
         <nav>
-          <button id="home" onClick={handleScroll}>
-            HOME
-          </button>
-          <button id="about" onClick={handleScroll}>
-            ABOUT
-          </button>
-          <button id="project" onClick={handleScroll}>
-            PROJECT
-          </button>
-          <button id="contact" onClick={handleScroll}>
-            CONTACT
-          </button>
+          <ul>
+            <Link to="about">
+              <li id="about" onClick={handleScroll}>
+                ABOUT
+              </li>
+            </Link>
+            <Link to="works">
+              <li id="works" onClick={handleScroll}>
+                WORKS
+              </li>
+            </Link>
+            <Link to="contact">
+              <li id="contact" onClick={handleScroll}>
+                CONTACT
+              </li>
+            </Link>
+          </ul>
         </nav>
-        <Route path="/" exact={true} component={Home} />
+        <Route path="/" component={Home} />
+        <Route path="/" component={About} />
       </HashRouter>
     </>
   );
