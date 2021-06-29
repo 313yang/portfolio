@@ -4,6 +4,11 @@ import "../assets/About.css";
 
 function About() {
   const [languages, setLanguages] = useState([]);
+  const [javascript, setJS] = useState();
+  const [html, setHtml] = useState();
+  const [css, setCss] = useState();
+  const [pug, setPug] = useState();
+  const [scss, setScss] = useState();
   useEffect(() => {
     const getLanguages = async () => {
       const owner = "313yang";
@@ -17,6 +22,11 @@ function About() {
         }
       );
       setLanguages(data);
+      setJS(data.JavaScript);
+      setHtml(data.HTML);
+      setCss(data.CSS);
+      setPug(data.Pug);
+      setScss(data.SCSS);
     };
     getLanguages();
   }, [languages]);
@@ -30,7 +40,11 @@ function About() {
       </div>
       <div className="skills">
         <h1>Skills</h1>
-        <span></span>
+        <span>{javascript}</span>
+        <span>{html}</span>
+        <span>{css}</span>
+        <span>{pug}</span>
+        <span>{scss}</span>
       </div>
     </section>
   );
