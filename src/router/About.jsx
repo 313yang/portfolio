@@ -27,7 +27,6 @@ function About() {
     setOptions({
       responsive: true,
       color: "#919191",
-      borderWidth: 1,
       plugins: {
         legend: {
           position: "right",

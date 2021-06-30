@@ -1,8 +1,10 @@
 import { HashRouter, Link, Route } from "react-router-dom";
 import Home from "./router/Home";
-import "./assets/styles.css";
 import About from "./router/About";
+import Projects from "./router/Projects";
+import Contact from "./router/Contact";
 
+import "./assets/styles.css";
 function App() {
   const handleScroll = (e) => {
     const {
@@ -10,7 +12,7 @@ function App() {
     } = e;
     if (id === "about") {
       window.scrollTo({ top: 1000, behavior: "smooth" });
-    } else if (id === "works") {
+    } else if (id === "projects") {
       window.scrollTo({ top: 2000, behavior: "smooth" });
     } else if (id === "contact") {
       window.scrollTo({ top: 3000, behavior: "smooth" });
@@ -26,9 +28,9 @@ function App() {
                 ABOUT
               </li>
             </Link>
-            <Link to="works">
-              <li id="works" onClick={handleScroll}>
-                WORKS
+            <Link to="projects">
+              <li id="projects" onClick={handleScroll}>
+                PROJECTS
               </li>
             </Link>
             <Link to="contact">
@@ -40,6 +42,8 @@ function App() {
         </nav>
         <Route path="/" component={Home} />
         <Route path="/" component={About} />
+        <Route path="/" component={Projects} />
+        <Route path="/" component={Contact} />
       </HashRouter>
     </>
   );

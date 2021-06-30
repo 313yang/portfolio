@@ -37,7 +37,6 @@ nav ul {
   list-style: none;
   padding-left: 0px;
   display: flex;
-  justify-content: space-between;
 }
 
 nav ul a li {
@@ -50,6 +49,7 @@ nav ul a li {
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
+
 nav ul a li:hover,
 nav ul a li:active {
   opacity: 1;
