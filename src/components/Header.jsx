@@ -39,13 +39,14 @@ function Header() {
       <header>
         <Link
           to="/"
-          className="logo"
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <p>Y</p>
-          <p>★</p>
+          <div className="logo">
+            <p>Y</p>
+            <p>★</p>
+          </div>
         </Link>
         {isDark ? (
           <div className="toggle" style={{ border: "1px solid #282828" }}>
