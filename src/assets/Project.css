@@ -1,0 +1,30 @@
+.project-section {
+  color: white;
+  padding: 150px 10% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project-section__contents {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.project-section__content {
+  display: flex;
+  margin-bottom: 40px;
+}
+.project-section__content__img {
+  width: 100%;
+}
+.project-section__content__img img {
+  width: 900px;
+  object-fit: cover;
+  border-radius: 3px;
+  border: 1px solid #efefef;
+}
+.project-section__content__btns {
+  white-space: pre-wrap;
+  margin-left: 20px;
+  width: 100%;
+}

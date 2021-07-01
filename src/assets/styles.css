@@ -54,6 +54,11 @@ nav ul {
 .nav__list:active {
   opacity: 1;
 }
+
+.menu-title {
+  margin: 40px;
+  font-size: 30px;
+}
 .video {
   position: fixed;
   top: 0;
