@@ -39,7 +39,7 @@ nav ul {
   display: flex;
 }
 
-nav ul a li {
+.nav__list {
   color: var(--gray);
   text-align: center;
   font-size: 14px;
@@ -50,8 +50,8 @@ nav ul a li {
   transition: opacity 0.2s ease;
 }
 
-nav ul a li:hover,
-nav ul a li:active {
+.nav__list:hover,
+.nav__list:active {
   opacity: 1;
 }
 .video {

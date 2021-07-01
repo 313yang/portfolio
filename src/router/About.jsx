@@ -45,7 +45,7 @@ function About() {
       </div>
       <div className="skills">
         <h1>Skills</h1>
-        <p>총 17개의 Github repositories 중 언어 사용비율</p>
+        <p>총 12개의 Github repositories 중 언어 사용비율</p>
         <Pie data={data} options={options} />
       </div>
     </section>

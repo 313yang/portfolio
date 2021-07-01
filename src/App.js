@@ -24,17 +24,17 @@ function App() {
         <nav>
           <ul>
             <Link to="about">
-              <li id="about" onClick={handleScroll}>
+              <li className="nav__list" id="about" onClick={handleScroll}>
                 ABOUT
               </li>
             </Link>
             <Link to="projects">
-              <li id="projects" onClick={handleScroll}>
+              <li className="nav__list" id="projects" onClick={handleScroll}>
                 PROJECTS
               </li>
             </Link>
             <Link to="contact">
-              <li id="contact" onClick={handleScroll}>
+              <li className="nav__list" id="contact" onClick={handleScroll}>
                 CONTACT
               </li>
             </Link>
