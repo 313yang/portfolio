@@ -7,7 +7,7 @@ function ProjectContent({ title, description, pageLink, githubLink }) {
         <div className="project-section__content__img">
           <img src={`./img/${title}.PNG`} alt={title} title={title} />
         </div>
-        <div className="project-section__content__btns">
+        <div className="project-section__content__description">
           <p>{description}</p>
           <a href={pageLink} className="project-section__link">
             <button className="project-section__linkBtn">GO TO PAGE</button>

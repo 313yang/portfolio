@@ -14,7 +14,18 @@ function Header() {
   isDark
     ? (document.body.style.backgroundColor = "white")
     : (document.body.style.backgroundColor = "black");
-
+  const projectContainer = document.querySelectorAll(
+    ".project-section__content"
+  );
+  isDark
+    ? projectContainer.forEach(
+        (container) =>
+          (container.style.backgroundColor = "rgba(255, 255, 255, 0.8)")
+      )
+    : projectContainer.forEach(
+        (container) =>
+          (container.style.backgroundColor = "rgba(255, 255, 255, 0.05)")
+      );
   return (
     <>
       {isDark ? (
