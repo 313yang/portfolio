@@ -1,19 +1,26 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import "../assets/star-dark.css";
 
 function Header() {
   const [isDark, setDark] = useState(false);
   const handleDark = () => {
     const divs = document.querySelectorAll("div");
     const header = document.querySelector("header");
+    const star1 = document.getElementById("stars");
+    const star2 = document.getElementById("stars2");
+    const star3 = document.getElementById("stars3");
+    star1.classList.toggle("stars-dark");
+    star2.classList.toggle("stars-dark2");
+    star3.classList.toggle("stars-dark3");
     divs.forEach((div) => div.classList.toggle("dark"));
     setDark(!isDark);
     header.classList.toggle("darkHeader");
   };
 
   isDark
-    ? (document.body.style.backgroundColor = "white")
-    : (document.body.style.backgroundColor = "black");
+    ? (document.body.style.backgroundColor = "#fff")
+    : (document.body.style.backgroundColor = "#202020");
   const projectContainer = document.querySelectorAll(
     ".project-section__content"
   );
@@ -24,29 +31,11 @@ function Header() {
       )
     : projectContainer.forEach(
         (container) =>
-          (container.style.backgroundColor = "rgba(255, 255, 255, 0.05)")
+          (container.style.backgroundColor = "rgba(255, 255, 255, 0.1)")
       );
+
   return (
     <>
-      {isDark ? (
-        <video
-          autoPlay
-          muted
-          loop
-          className="video"
-          src="./img/Waves.mp4"
-          type="video/mp4"
-        ></video>
-      ) : (
-        <video
-          autoPlay
-          muted
-          loop
-          className="video"
-          src="./img/Waves - 447.mp4"
-          type="video/mp4"
-        ></video>
-      )}
       <header>
         <Link
           to="/"

@@ -1,4 +1,6 @@
 import "../assets/Home.css";
+import "../assets/star.css";
+
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
 
@@ -61,6 +63,11 @@ function Home() {
   return (
     <>
       <Header />
+      <div className="bg">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+      </div>
       <section className="home-section">
         <div className="home-section__info">
           <div className="home-section__info-title">

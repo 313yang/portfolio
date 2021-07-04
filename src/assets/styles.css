@@ -50,9 +50,8 @@ nav ul {
   transition: opacity 0.2s ease;
 }
 
-.nav__list:hover,
-.nav__list:active {
-  opacity: 1;
+.nav__list:hover {
+  opacity: 1 !important;
 }
 
 .menu-title {
