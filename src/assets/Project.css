@@ -14,7 +14,7 @@
 .project-section__content {
   position: relative;
   width: 500px;
-  height: 500px;
+  height: 550px;
   padding: 20px;
   margin: 20px;
   border-radius: 5px;
@@ -39,6 +39,14 @@
 }
 .project-section__content__description h2 {
   margin-bottom: 20px;
+}
+.project-section__content__description ul li {
+  all: unset;
+  margin-bottom: 20px;
+  margin: 0 5px;
+}
+.project-section__content__description ul li #text {
+  margin: 0 5px;
 }
 .project-section__content__btn {
   position: absolute;
