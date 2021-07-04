@@ -12,13 +12,14 @@
   margin-bottom: 50px;
 }
 .project-section__content {
+  position: relative;
   width: 500px;
   height: 500px;
   padding: 20px;
   margin: 20px;
   border-radius: 5px;
   color: white;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.22);
   transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 .project-section__content:hover {
@@ -26,7 +27,7 @@
 }
 .project-section__content__img img {
   width: 100%;
-  height: 300px;
+  height: 250px;
   margin-bottom: 20px;
   object-fit: cover;
   border-radius: 3px;
@@ -35,4 +36,27 @@
 .project-section__content__description {
   white-space: pre-wrap;
   width: 100%;
+}
+.project-section__content__description h2 {
+  margin-bottom: 20px;
+}
+.project-section__content__btn {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.project-section__link button {
+  border: none;
+  background-color: transparent;
+  color: var(--gray);
+  font-size: 30px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: all 0.2s ease;
+}
+.project-section__link button:hover {
+  color: #bdbdbdce;
 }

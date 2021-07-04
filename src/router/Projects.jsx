@@ -5,7 +5,7 @@ function Projects() {
     {
       title: "Vimolog",
       description:
-        "유튜브 클론 코딩으로 Node.js로 백엔드 구축, MongoDB를 이용해 유저 및 동영상 등의 데이터를 관리.\n Pug로 템플릿을 렌더링, Webpack으로 SCSS,JS를 설정해 사용.",
+        "유튜브 클론 코딩으로 Node.js로 백엔드 구축.\n MongoDB를 이용해 유저 및 동영상 등의 데이터를 관리.\n Pug로 템플릿을 렌더링, Webpack으로 SCSS,JS를 설정해 사용.",
       pageLink: "https://vimolog.herokuapp.com/",
       githubLink: "https://github.com/313yang/VimoLog",
     },
