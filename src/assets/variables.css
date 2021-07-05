@@ -1,6 +1,6 @@
 :root {
-  --white: #ffffff;
-  --black: #000000;
+  --black: #202020;
   --gray: #919191;
+  --lightGray: #efefef;
   --max-width: 1280px;
 }

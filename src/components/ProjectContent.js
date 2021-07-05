@@ -4,9 +4,7 @@ function ProjectContent({ title, description, pageLink, githubLink, skill }) {
   return (
     <>
       <div className="project-section__content">
-        <div className="project-section__content__img">
-          <img src={`./img/${title}.PNG`} alt={title} title={title} />
-        </div>
+        <img src={`./img/${title}.PNG`} alt={title} title={title} />
         <div className="project-section__content__description">
           <h2>{title}</h2>
           <ul>

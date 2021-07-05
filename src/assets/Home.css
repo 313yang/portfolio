@@ -13,7 +13,8 @@ header {
   z-index: 1;
 }
 .logo {
-  color: var(--white);
+  position: relative;
+  color: white;
   display: flex;
   font-size: 24px;
   font-weight: 700;
@@ -21,14 +22,18 @@ header {
 }
 
 .logo p:last-child {
-  font-size: 8px;
+  position: absolute;
+  font-size: 4px;
   margin: 5px;
-  animation: blinker 1.5s ease infinite;
+  width: 60px;
+  left: -30px;
+  bottom: 5px;
+  animation: blinker 5s linear infinite;
 }
 
 @keyframes blinker {
-  50% {
-    opacity: 0;
+  100% {
+    transform: rotate(360deg);
   }
 }
 .toggle {
@@ -36,13 +41,13 @@ header {
   align-items: center;
   width: 48px;
   height: 24px;
-  border: 1px solid var(--white);
+  border: 1px solid white;
   border-radius: 3px;
 }
 .toggle #toggleBtn {
   width: 12px;
   height: 12px;
-  background-color: var(--white);
+  background-color: white;
   margin: 5px;
   border-radius: 50%;
   border: none;
@@ -50,7 +55,7 @@ header {
 }
 
 .home-section {
-  color: var(--white);
+  color: white;
   width: 100%;
   height: 100vh;
   padding: 0 10%;
