@@ -9,7 +9,11 @@ function ProjectContent({ title, description, pageLink, githubLink, skill }) {
         </div>
         <div className="project-section__content__description">
           <h2>{title}</h2>
-          <h4>{skill}</h4>
+          <ul>
+            {skill.map((list, index) => (
+              <li key={index}>{list}</li>
+            ))}
+          </ul>
           <p>{description}</p>
           <div className="project-section__content__btn">
             <a href={pageLink} className="project-section__link">
