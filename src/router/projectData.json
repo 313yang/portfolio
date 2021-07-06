@@ -20,7 +20,28 @@
       "description": "'밀리의 서재'를 모티브로 한 e-book 웹사이트. React를 기반으로 제작. Kakao 도서검색 REST API를 사용해 도서목록 정렬, 검색 가능.",
       "pageLink": "https://313yang.github.io/genies-library/",
       "githubLink": "https://github.com/313yang/genies-library",
-      "skill": ["React.js", "Styled-component"]
+      "skill": ["React.js", "Styled-component", "React Hook"]
+    },
+    {
+      "title": "NETFLEX",
+      "description": "'넷플릭스'를 모티브로 한 영화 웹사이트. React를 기반으로 제작. 영화 API를 통해 영화 목록을 불러옴.",
+      "pageLink": "https://313yang.github.io/movie_app/",
+      "githubLink": "https://github.com/313yang/movie_app",
+      "skill": ["React.js", "Styled-component", "React Hook"]
+    },
+    {
+      "title": "Find My Plant - 반려식물 찾기 테스트",
+      "description": "심리테스트 스타일의 웹사이트. Kakao API를 통한 '공유하기' 사용 가능. 결과에 따라 총 24가지 결과 리스트 제작.",
+      "pageLink": "https://findmyplant.netlify.app/",
+      "githubLink": "https://github.com/313yang/find-my-plant",
+      "skill": ["HTML", "CSS", "Vanilla JS"]
+    },
+    {
+      "title": "Banana Music",
+      "description": "기본적인 스크린 화면 구성 위주로 제작된 음악 어플리케이션 모바일 버전 사이트. ",
+      "pageLink": "https://313yang.github.io/Banana-Music/",
+      "githubLink": "https://github.com/313yang/Banana-Music",
+      "skill": ["HTML", "CSS", "Vanilla JS"]
     }
   ]
 }

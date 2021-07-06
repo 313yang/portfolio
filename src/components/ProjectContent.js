@@ -14,12 +14,22 @@ function ProjectContent({ title, description, pageLink, githubLink, skill }) {
           </ul>
           <p>{description}</p>
           <div className="project-section__content__btn">
-            <a href={pageLink} className="project-section__link">
+            <a
+              href={pageLink}
+              target="_blank"
+              rel="noreferrer"
+              className="project-section__link"
+            >
               <button className="project-section__linkBtn">
                 <i className="fas fa-globe"></i>
               </button>
             </a>
-            <a href={githubLink} className="project-section__link">
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noreferrer"
+              className="project-section__link"
+            >
               <button className="project-section__linkBtn">
                 <i className="fab fa-github"></i>
               </button>

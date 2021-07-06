@@ -12,11 +12,11 @@ function App() {
       target: { id },
     } = e;
     if (id === "about") {
-      window.scrollTo({ top: 950, behavior: "smooth" });
+      window.scrollTo({ top: 1000, behavior: "smooth" });
     } else if (id === "projects") {
       window.scrollTo({ top: 2100, behavior: "smooth" });
     } else if (id === "contact") {
-      window.scrollTo({ top: 3000, behavior: "smooth" });
+      window.scrollTo({ top: 5000, behavior: "smooth" });
     }
   };
   useEffect(() => {
@@ -29,11 +29,11 @@ function App() {
         about.style.opacity = "1";
         project.style.opacity = "0.6";
         contact.style.opacity = "0.6";
-      } else if (window.scrollY <= 2900 && window.scrollY > 2000) {
+      } else if (window.scrollY <= 3300 && window.scrollY > 2000) {
         project.style.opacity = "1";
         about.style.opacity = "0.6";
         contact.style.opacity = "0.6";
-      } else if (window.scrollY > 2900) {
+      } else if (window.scrollY > 3300) {
         contact.style.opacity = "1";
         project.style.opacity = "0.6";
         about.style.opacity = "0.6";

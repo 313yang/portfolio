@@ -57,6 +57,7 @@ nav ul {
 .menu-title {
   margin: 40px;
   font-size: 30px;
+  text-align: center;
 }
 .video {
   position: fixed;
