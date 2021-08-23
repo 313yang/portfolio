@@ -21,16 +21,6 @@ header {
   cursor: pointer;
 }
 
-.logo p:last-child {
-  position: absolute;
-  font-size: 4px;
-  margin: 5px;
-  width: 60px;
-  left: -30px;
-  bottom: 5px;
-  animation: blinker 5s linear infinite;
-}
-
 @keyframes blinker {
   100% {
     transform: rotate(360deg);

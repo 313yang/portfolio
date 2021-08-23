@@ -45,9 +45,6 @@ function Header() {
         >
           <div className="logo">
             <p>Y</p>
-            <p>
-              <i className="far fa-star"></i>
-            </p>
           </div>
         </Link>
         {isDark ? (
